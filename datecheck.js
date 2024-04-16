@@ -1,4 +1,4 @@
-<script>
+$(document).ready(function() {
     // Get the current date
     const currentDate = new Date();
 
@@ -7,8 +7,8 @@
 
     // Compare the current date with the target date
     if (currentDate > targetDate) {
-        document.getElementById('valid').style.display = 'none';
+        $('#valid').hide();
     } else {
-        document.getElementById('error').style.display = 'none';
+        $('#error').hide();
     }
-</script>
+});
